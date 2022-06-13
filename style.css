@@ -101,6 +101,13 @@ html {
     height: auto;
     width: 100%;
 }  
+.animate__animated {
+    height: 50px;
+    width: 50px;  
+    position:fixed;
+    top: 600px;
+    left: 1425px;    
+} /* cambio 9 */
 
  .imagenboton {
     height: 50px;
@@ -108,13 +115,7 @@ html {
     position:fixed;
     top: 600px;
     left: 1425px;
-    /* transition: height 2s; */
-} 
-
-/* .imagenboton:hover {
-    height: 75px;
-    width: 75px; 
-} */
+} /* cambio 9 */
 
 .contacto { 
 
@@ -317,6 +318,8 @@ html {
         padding-left: 25px;
         padding-right: 25px;
         padding-bottom: 25px;
+        padding-bottom: 210px;  /* cambio 6 */
+        padding-top: 150px; /* cambio 5 */
     }
 
     .estudiotexto {
@@ -337,6 +340,7 @@ html {
         padding-top: 125px;
         padding-left: 25px;
         padding-right: 25px;
+        padding-top: 150px; /* cambio 4 */
     }
 
     .cajamauro {
@@ -393,6 +397,7 @@ html {
         padding-top: 125px;
         padding-left: 25px;
         padding-right: 25px;
+        padding-top: 150px; /* cambio 3 */
     } 
 
     .serviciostexto {
@@ -410,6 +415,7 @@ html {
         padding-top: 125px;
         padding-left: 25px;
         padding-right: 25px;
+        padding-bottom: 210px; /* cambio 1 */
     }
 
     .cuadrodeinformacion {
@@ -424,6 +430,7 @@ html {
     .cajacuadro {
         padding-left: 0px;
         padding-bottom: 0px;
+        padding-top: 25px; /* cambio 2 */
     } 
 
     .cuerpo {
@@ -431,6 +438,7 @@ html {
         width: 100%;
         display: flex;
         padding-top: 125px;
+        padding-bottom: 275px; /* cambio 7 */
     }
 
    
