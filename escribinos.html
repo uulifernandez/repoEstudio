@@ -9,6 +9,8 @@
 
         <link rel="stylesheet" href="style.css">
 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
         <script src="https://use.fontawesome.com/b29ce011be.js"></script>
 
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,45 +19,40 @@
     </head>
         
     <body>
-        <header>
-            <nav class="navbar navbar-expand-lg bg-light">
-                <div class="container-fluid">
-                    <h1 class="titulo">Estudio Eme.U<br><small class="text-muted">Arquitectura e Ingeniería</small></h1>
-                    <img class=logoestudio src="assets/logoestudio.png" alt="Logo del estudio"/>
+      <header>         
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <h1 class="titulo">Estudio Eme.U<br><small class="text-muted">Arquitectura e Ingeniería</small></h1>
+                <a href="index.html"><img type="button" class=logoestudio src="assets/logoestudio.png" alt="Logo del estudio"/></a>
 
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                      <li class="nav-item">
-                        <a class="nav-link" href="index.html">INICIO</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="estudio.html">ESTUDIO</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="nosotros.html">NOSOTROS</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="servicios.html">SERVICIOS</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="escribinos.html">ESCRIBINOS</a>
-                      </li>
-                  </div>
-                </div>
-            </nav>
-        </header>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0"> 
+                  <li class="nav-item">
+                    <a class="nav-link" href="estudio.html">ESTUDIO</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="nosotros.html">NOSOTROS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="servicios.html">SERVICIOS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="escribinos.html">ESCRIBINOS</a>
+                  </li>
+              </div>
+            </div>
+        </nav>
+      </header>
         
         <div class="pestañaescribinos">
-
-            <!-- <h2>ESCRIBINOS</h2> -->
 
             <div class="cajacuadro">
                 
                 <form>
-                    <fieldset disabled>
+                    <fieldset>
                       <legend>ESCRIBINOS</legend>
 
                       <div class="col-lg-4 col-md-6 col-sm-12">
@@ -71,7 +68,7 @@
                       <div class="col-lg-4 col-md-6 col-sm-12">
                         <label for="disabledSelect" class="form-label">Servicio que estas buscando</label>
                         <select class="form-select" aria-label="Default select example">
-                            <option selected>seleccione el servicio</option>
+                            <option selected>Seleccione el servicio</option>
                             <option value="1">Diseño de interior</option>
                             <option value="2">Proyecto de arquitectura</option>
                             <option value="3">Dirección de obra</option>
@@ -84,7 +81,7 @@
                     </fieldset>
                   </form>
 
-                  <img type="button" class=imagenboton src="assets/botonwapp.PNG" alt="Logo de Whatsapp"/> <!-- cambio 9-->         
+                  <img type="button" class="animate__animated animate__heartBeat" alt= "Logo de Whatsapp" src="assets/botonwapp.png">  
             </div>
         </div>
 
