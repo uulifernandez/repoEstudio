@@ -1,438 +1,485 @@
+@charset "UTF-8";
 ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
 h2 {
-    font-weight: bold;
-    font-size: 2rem;
-    padding-bottom: 25px;
-} 
+  font-weight: bold;
+  font-size: 2rem;
+  padding-bottom: 25px;
+}
 
 h3 {
-    font-weight: bold;
-    font-size: 1.5rem;
+  font-weight: bold;
+  font-size: 1.5rem;
 }
 
 h4 {
-    font-weight: bold;
-    font-size: 1.25rem;
+  font-weight: bold;
+  font-size: 1.25rem;
 }
 
 #linkparaig {
-    text-decoration: underline;
-    color: rgb(24, 24, 147);
+  text-decoration: underline;
+  color: #222297;
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    }
+* {
+  margin: 0;
+  padding: 0;
+}
 
 html {
-    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 62.5%;
-    background-color: rgb(219, 219, 219);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 62.5%;
+  background-color: #dbdbdb;
 }
 
 .navbar {
-    position: fixed;
-    background-color:rgb(141, 141, 141);
-    opacity: 0.7;
-    opacity: .7;
-    width: 100%;
-    height: 125px;
+  position: fixed;
+  background-color: #8d8d8d;
+  opacity: 0.7;
+  opacity: .7;
+  width: 100%;
+  height: 125px;
 }
 
 .logoestudio {
-    height: 7.5rem;
-    width: auto;
-    padding-left: 50px;
-    padding-right: 625px;
+  height: 7.5rem;
+  width: auto;
+  padding-left: 50px;
+  padding-right: 625px;
 }
-    
+
 .titulo {
-    height: auto;
-    width: auto;
-    font-size: 2.5rem;
-    padding-left: 25px;    
-    }    
-
-.menu {    
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 700px;    
-    padding-top: 50px;
-    padding-right: 25px;
+  height: auto;
+  width: auto;
+  font-size: 2.5rem;
+  padding-left: 25px;
 }
 
-.itemmenu {    
-    font-size: 2rem;
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 700px;
+  padding-top: 50px;
+  padding-right: 25px;
 }
 
-.nav-link {    
-    font-size: 1.75rem;
+.itemmenu {
+  font-size: 2rem;
+}
+
+.nav-link {
+  font-size: 1.75rem;
 }
 
 .cuerpo {
-    height: auto;
-    width: 100%;
-    display: flex;
+  height: auto;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.imagendefondo { 
-    top: 0;
-    height: auto;
-    width: 100%;
-}  
+.imagendefondo {
+  top: 0;
+  height: auto;
+  width: 100%;
+}
 
 .animate__animated {
-    height: 50px;
-    width: 50px;  
-    position:fixed;
-    top: 600px;
-    left: 1425px;    
-} 
+  height: 50px;
+  width: 50px;
+  position: fixed;
+  top: 600px;
+  left: 1425px;
+}
 
- .imagenboton {
-    height: 50px;
-    width: 50px;  
-    position:fixed;
-    top: 600px;
-    left: 1425px;
-} 
+.imagenboton {
+  height: 50px;
+  width: 50px;
+  position: fixed;
+  top: 600px;
+  left: 1425px;
+}
 
-.contacto { 
-    background-color:rgb(141, 141, 141);
-    padding-left: 25px;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    text-align: left;
+.contacto {
+  background-color: #8d8d8d;
+  padding-left: 25px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: left;
 }
 
 /* PESTAÑA SERVICIOS */
-
-#grilla{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: auto auto auto;
-    row-gap: 25px;
-    grid-template-areas: 
-     "servicios1 servicios2" 
-     "servicios3 servicios4";
-    padding-top: 150px;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-bottom: 50px;
+#grilla {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  -ms-grid-rows: auto auto auto;
+      grid-template-rows: auto auto auto;
+  row-gap: 25px;
+      grid-template-areas: "servicios1 servicios2"  "servicios3 servicios4";
+  padding-top: 150px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 50px;
 }
 
 .serviciostexto {
-    width: auto;   
-    font-size: 1.50rem;
-    left: 0px;
+  width: auto;
+  font-size: 1.50rem;
+  left: 0px;
 }
 
 /* PESTAÑA ESTUDIO */
-
 .pestañaestudio {
-    height: auto;
-    width: 100%;
-    flex-direction:column;
-    padding-top: 150px;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-bottom: 285px;
+  height: auto;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 150px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 285px;
 }
 
 .estudiotexto {
-    height: auto;
-    width: auto;
-    font-size: 1.50rem;
+  height: auto;
+  width: auto;
+  font-size: 1.50rem;
 }
 
 /* PESTAÑA NOSOTROS */
-
 .pestañanosotros {
-    height: auto;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    padding-top: 150px;
-    padding-left: 50px;
+  height: auto;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 150px;
+  padding-left: 50px;
 }
 
 .cajamauro {
-    height: auto;
-    width: auto;
-    display: flex;
-    flex-direction: column;
-    padding-right: 25px;
-    padding-bottom: 25px;
+  height: auto;
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-right: 25px;
+  padding-bottom: 25px;
 }
 
 .contenido {
-    height: auto;
-    width: auto;
-    display: flex;
-    flex-direction: row;
-    align-content:flex-start; 
+  height: auto;
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
 }
 
 .foto {
-    height: 250px;
-    width: auto;
-    padding-left: 25px;
+  height: 250px;
+  width: auto;
+  padding-left: 25px;
 }
 
 .nosotrostexto {
-    height: auto;
-    width: 800px;
-    padding-left: 50px;
-    padding-top: 25px;
-    font-size: 1.50rem;
+  height: auto;
+  width: 800px;
+  padding-left: 50px;
+  padding-top: 25px;
+  font-size: 1.50rem;
 }
 
 .cajauli {
-    height: auto;
-    width: auto;
-    display: flex;
-    flex-direction: column;
-    padding-right: 25px;
-    padding-bottom: 25px;
-    align-content:flex-start; 
+  height: auto;
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-right: 25px;
+  padding-bottom: 25px;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
 }
 
 /* PESTAÑA ESCRIBINOS */
-
 .pestañaescribinos {
-    height: auto;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    padding-top: 150px;
+  height: auto;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 150px;
 }
 
 .cajacuadro {
-    padding-left: 50px;
-    padding-bottom: 25px;
-    padding-bottom: 150px;
-} 
+  padding-left: 50px;
+  padding-bottom: 25px;
+  padding-bottom: 150px;
+}
 
 .cuadrodeinformacion {
-    height: auto;
-    width: 500px;
-    font-size: 1.50rem;
-    background-color: white;
-    border-style: solid;
-    border-width: 5px;
-    padding: 10px;    
-} 
+  height: auto;
+  width: 500px;
+  font-size: 1.50rem;
+  background-color: white;
+  border-style: solid;
+  border-width: 5px;
+  padding: 10px;
+}
 
 .cajacuadro {
-    padding-bottom: 190px;
+  padding-bottom: 190px;
+}
+
+.btn {
+  background-color: #b0b0b0;
+}
+
+.btn:hover {
+  background-color: #5577f0;
 }
 
 @media screen and (max-width: 320px) {
-
-    #navbarSupportedContent {
-        background-color:rgb(141, 141, 141);
-    }
-
-    .logoestudio {
-        height: 3rem;
-        width: auto;
-        padding-left: 7.5px;
-        padding-right: 7.5px;
-    }
-        
-    .titulo {
-        height: auto;
-        width: auto;
-        font-size: 1.75rem;
-        padding-left: 10px;   
-        }  
-
-    .nav-link {    
-        font-size: 1.75rem;
-    }
-
-    #navbarSupportedContent{
-        padding-left: 25px;
-    }
-
-
-    .animate__animated {
-        height: 50px;
-        width: 50px;  
-        position:fixed;
-        top: 525px;
-        left: 250px;  
-    } 
-    
-    .menu {
-        display: none;
-    }
-
-    h2 {
-        font-weight: bold;
-        font-size: 1.5rem;
-        padding-top: 0px;
-        padding-left: 0px;
-        padding-bottom: 5px;
-    } 
-
-    h3 {
-        font-weight: bold;
-        font-size: 1.5rem;
-    }
-    
-    h4 {
-        font-weight: bold;
-        font-size: 1rem;
-    }
-
-    .pestañaestudio {
-        height: auto;
-        width: auto;
-        flex-direction:column;
-        padding-top: 125px;
-        padding-left: 25px;
-        padding-right: 25px;
-        padding-bottom: 25px;
-        padding-bottom: 210px;  
-        padding-top: 150px; 
-    }
-
-    .estudiotexto {
-        height: auto;
-        width: auto;
-        font-size: 1.25rem;
-        left: 0px;
-        right: 0px;
-        top: 0px;
-        bottom: 0px;
-    }
-
-    .pestañanosotros {
-        height: auto;
-        width: auto;
-        display: flex;
-        flex-direction: column;
-        padding-top: 125px;
-        padding-left: 25px;
-        padding-right: 25px;
-        padding-top: 150px; 
-    }
-
-    .cajamauro {
-        height: auto;
-        width: auto;
-        display: flex;
-        flex-direction: column;
-        padding-right: 0px;
-        padding-bottom: 0px;
-    }
-    
-    .contenido {
-        height: auto;
-        width: auto;
-        display: flex;
-        flex-direction: column; 
-    }
-    
-    .foto {
-        height: auto;
-        width: 90%;
-        padding-left: 0px;
-        padding-bottom: 10px;
-    }
-    
-    .nosotrostexto {
-        height: auto;
-        width: auto;
-        padding-left: 0px;
-        padding-top: 0px;
-        font-size: 1.25rem;
-    }
-    
-    .cajauli {
-        height: auto;
-        width: auto;
-        display: flex;
-        flex-direction: column;
-        padding-top: 10px;
-        padding-left: 0px;
-        padding-right: 0px;
-    }
-
-    #grilla{
-        display: grid;
+  #navbarSupportedContent {
+    background-color: #8d8d8d;
+  }
+  .logoestudio {
+    height: 3rem;
+    width: auto;
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+  }
+  .titulo {
+    height: auto;
+    width: auto;
+    font-size: 1.75rem;
+    padding-left: 10px;
+  }
+  .nav-link {
+    font-size: 1.75rem;
+  }
+  #navbarSupportedContent {
+    padding-left: 25px;
+  }
+  .animate__animated {
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    top: 525px;
+    left: 250px;
+  }
+  .menu {
+    display: none;
+  }
+  h2 {
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-bottom: 5px;
+  }
+  h3 {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  h4 {
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  .pestañaestudio {
+    height: auto;
+    width: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 125px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+    padding-bottom: 210px;
+    padding-top: 150px;
+  }
+  .estudiotexto {
+    height: auto;
+    width: auto;
+    font-size: 1.25rem;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+  }
+  .pestañanosotros {
+    height: auto;
+    width: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 125px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 150px;
+  }
+  .cajamauro {
+    height: auto;
+    width: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-right: 0px;
+    padding-bottom: 0px;
+  }
+  .contenido {
+    height: auto;
+    width: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .foto {
+    height: auto;
+    width: 90%;
+    padding-left: 0px;
+    padding-bottom: 10px;
+  }
+  .nosotrostexto {
+    height: auto;
+    width: auto;
+    padding-left: 0px;
+    padding-top: 0px;
+    font-size: 1.25rem;
+  }
+  .cajauli {
+    height: auto;
+    width: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  #grilla {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 100%;
         grid-template-columns: 100%;
-        grid-template-rows: auto auto auto auto ;
-        row-gap: 15px;
-        grid-template-areas: 
-         "servicios1" 
-         "servicios2" 
-         "servicios3" 
-         "servicios4";
-        padding-top: 125px;
-        padding-left: 25px;
-        padding-right: 25px;
-        padding-top: 150px; 
-    } 
-
-    .serviciostexto {
-        width: auto;   
-        font-size: 1.25rem;
-        padding-top: 0px;
-        padding-left: 0px;
-    }
-
-    .pestañaescribinos {
-        height: auto;
-        width: auto;
-        display: flex;
-        flex-direction: column;
-        padding-top: 125px;
-        padding-left: 25px;
-        padding-right: 25px;
-        padding-bottom: 210px; 
-    }
-
-    .cuadrodeinformacion {
-        height: auto;
-        width: 80%;
-        font-size: 1rem;
-        background-color: white;
-        border-style: solid;
-        border-width: 5px;    
-    }    
-
-    .cajacuadro {
-        padding-left: 0px;
-        padding-bottom: 0px;
-        padding-top: 25px; 
-    } 
-
-    .cuerpo {
-        height: auto;
-        width: 100%;
-        display: flex;
-        padding-top: 125px;
-        padding-bottom: 275px; 
-    }
-
-   
-    .contacto { 
-        background-color:rgb(141, 141, 141);
-        padding-left: 25px;
-        padding-top: 25px;
-        text-align: left;
-    }
-
+    -ms-grid-rows: auto auto auto auto;
+        grid-template-rows: auto auto auto auto;
+    row-gap: 15px;
+        grid-template-areas: "servicios1"  "servicios2"  "servicios3"  "servicios4";
+    padding-top: 125px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 150px;
+  }
+  .serviciostexto {
+    width: auto;
+    font-size: 1.25rem;
+    padding-top: 0px;
+    padding-left: 0px;
+  }
+  .pestañaescribinos {
+    height: auto;
+    width: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 125px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 210px;
+  }
+  .cuadrodeinformacion {
+    height: auto;
+    width: 80%;
+    font-size: 1rem;
+    background-color: white;
+    border-style: solid;
+    border-width: 5px;
+  }
+  .cajacuadro {
+    padding-left: 0px;
+    padding-bottom: 0px;
+    padding-top: 25px;
+  }
+  .cuerpo {
+    height: auto;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 125px;
+    padding-bottom: 275px;
+  }
+  .contacto {
+    background-color: #8d8d8d;
+    padding-left: 25px;
+    padding-top: 25px;
+    text-align: left;
+  }
 }
+/*# sourceMappingURL=style.css.map */
