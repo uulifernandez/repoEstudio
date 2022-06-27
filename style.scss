@@ -1,4 +1,19 @@
 @import "colores";
+@import "tipografias";
+
+@mixin negrita ($size) {
+    font-weight: bold;
+    font-size: $size;
+}
+
+$estiloPaginaweb:(
+    alto: auto,
+    ancho: 100%,
+    organizacion: flex,
+    forma:column,
+    arriba: 150px,
+    izquierda: 50px,    
+);
 
 ul {
     list-style-type: none;
@@ -10,19 +25,16 @@ a {
 }
 
 h2 {
-    font-weight: bold;
-    font-size: 2rem;
+    @include negrita ($textoGrande);
     padding-bottom: 25px;
 } 
 
 h3 {
-    font-weight: bold;
-    font-size: 1.5rem;
+    @include negrita ($textoChico);
 }
 
 h4 {
-    font-weight: bold;
-    font-size: 1.25rem;
+    @include negrita ($textoextraChico);
 }
 
 #linkparaig {
@@ -38,7 +50,6 @@ h4 {
 html {
     font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 62.5%;
-    background-color: rgb(219, 219, 219);
 }
 
 .navbar {
@@ -50,35 +61,32 @@ html {
     height: 125px;
 }
 
+
+.tituloClic {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+}
+
 .logoestudio {
     height: 7.5rem;
     width: auto;
     padding-left: 50px;
-    padding-right: 625px;
 }
     
 .titulo {
     height: auto;
     width: auto;
-    font-size: 2.5rem;
+    font-size: $textoextraGrande;
     padding-left: 25px;    
     }    
 
-.menu {    
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 700px;    
-    padding-top: 50px;
-    padding-right: 25px;
-}
-
-.itemmenu {    
-    font-size: 2rem;
-}
-
 .nav-link {    
-    font-size: 1.75rem;
+    font-size: $textoMedio;
+}
+
+.collapse {
+    padding-left: 680px;
 }
 
 .cuerpo {
@@ -91,22 +99,15 @@ html {
     top: 0;
     height: auto;
     width: 100%;
+    object-fit: cover;
 }  
 
 .animate__animated {
     height: 50px;
     width: 50px;  
     position:fixed;
-    top: 600px;
-    left: 1425px;    
-} 
-
- .imagenboton {
-    height: 50px;
-    width: 50px;  
-    position:fixed;
-    top: 600px;
-    left: 1425px;
+    bottom: 50px;
+    right: 50px;    
 } 
 
 .contacto { 
@@ -135,18 +136,16 @@ html {
 
 .serviciostexto {
     width: auto;   
-    font-size: 1.50rem;
+    font-size: $textoChico;
     left: 0px;
 }
 
 /* PESTAÑA ESTUDIO */
 
+/* aca quiero aplicar map-get */
+
 .pestañaestudio {
-    height: auto;
-    width: 100%;
-    flex-direction:column;
-    padding-top: 150px;
-    padding-left: 50px;
+    @extend .pestañanosotros;
     padding-right: 50px;
     padding-bottom: 285px;
 }
@@ -154,18 +153,18 @@ html {
 .estudiotexto {
     height: auto;
     width: auto;
-    font-size: 1.50rem;
+    font-size: $textoChico;
 }
 
 /* PESTAÑA NOSOTROS */
 
 .pestañanosotros {
-    height: auto;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    padding-top: 150px;
-    padding-left: 50px;
+    height: map-get( $estiloPaginaweb, alto );
+    width: map-get( $estiloPaginaweb, ancho );
+    display: map-get( $estiloPaginaweb, organizacion );
+    flex-direction: map-get( $estiloPaginaweb, forma );
+    padding-top: map-get( $estiloPaginaweb, arriba );
+    padding-left: map-get( $estiloPaginaweb, izquierda);
 }
 
 .cajamauro {
@@ -196,7 +195,7 @@ html {
     width: 800px;
     padding-left: 50px;
     padding-top: 25px;
-    font-size: 1.50rem;
+    font-size: $textoChico;
 }
 
 .cajauli {
@@ -212,31 +211,20 @@ html {
 /* PESTAÑA ESCRIBINOS */
 
 .pestañaescribinos {
-    height: auto;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    padding-top: 150px;
+    @extend .pestañanosotros;
 }
 
 .cajacuadro {
-    padding-left: 50px;
     padding-bottom: 25px;
     padding-bottom: 150px;
 } 
 
-.cuadrodeinformacion {
-    height: auto;
-    width: 500px;
-    font-size: 1.50rem;
-    background-color: white;
-    border-style: solid;
-    border-width: 5px;
-    padding: 10px;    
-} 
+.form-label {
+    font-size: $textoChico;
+}
 
-.cajacuadro {
-    padding-bottom: 190px;
+.form-control, .form-select, .btn {
+    font-size: $textoextraGrande/2 ;
 }
 
 .btn {
@@ -253,43 +241,38 @@ html {
     }
 
     .logoestudio {
-        height: 3rem;
+        height: 3.5rem;
         width: auto;
-        padding-left: 7.5px;
-        padding-right: 7.5px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
         
     .titulo {
         height: auto;
         width: auto;
-        font-size: 1.75rem;
+        font-size: $textoMedio;
         padding-left: 10px;   
         }  
 
     .nav-link {    
-        font-size: 1.75rem;
+        font-size: $textoMedio;
     }
 
     #navbarSupportedContent{
         padding-left: 25px;
     }
 
-
     .animate__animated {
         height: 50px;
         width: 50px;  
         position:fixed;
-        top: 525px;
-        left: 250px;  
+        bottom: 25px;
+        right: 25px; 
     } 
-    
-    .menu {
-        display: none;
-    }
 
     h2 {
         font-weight: bold;
-        font-size: 1.5rem;
+        font-size: $textoChico;
         padding-top: 0px;
         padding-left: 0px;
         padding-bottom: 5px;
@@ -297,37 +280,15 @@ html {
 
     h3 {
         font-weight: bold;
-        font-size: 1.5rem;
+        font-size: $textoChico;
     }
     
     h4 {
         font-weight: bold;
-        font-size: 1rem;
+        font-size: $textoextraChico;
     }
 
-    .pestañaestudio {
-        height: auto;
-        width: auto;
-        flex-direction:column;
-        padding-top: 125px;
-        padding-left: 25px;
-        padding-right: 25px;
-        padding-bottom: 25px;
-        padding-bottom: 210px;  
-        padding-top: 150px; 
-    }
-
-    .estudiotexto {
-        height: auto;
-        width: auto;
-        font-size: 1.25rem;
-        left: 0px;
-        right: 0px;
-        top: 0px;
-        bottom: 0px;
-    }
-
-    .pestañanosotros {
+    .pestañaescribinos {
         height: auto;
         width: auto;
         display: flex;
@@ -335,7 +296,36 @@ html {
         padding-top: 125px;
         padding-left: 25px;
         padding-right: 25px;
-        padding-top: 150px; 
+    }
+
+    .pestañanosotros {
+        height: auto;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        padding-top: 150px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .pestañaestudio {
+        height: auto;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        padding-top: 150px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .estudiotexto {
+        height: auto;
+        width: auto;
+        font-size: $textoextraChico;
+        left: 0px;
+        right: 0px;
+        top: 0px;
+        bottom: 0px;
     }
 
     .cajamauro {
@@ -366,7 +356,7 @@ html {
         width: auto;
         padding-left: 0px;
         padding-top: 0px;
-        font-size: 1.25rem;
+        font-size: $textoextraChico;
     }
     
     .cajauli {
@@ -397,26 +387,15 @@ html {
 
     .serviciostexto {
         width: auto;   
-        font-size: 1.25rem;
+        font-size: $textoextraChico;
         padding-top: 0px;
         padding-left: 0px;
-    }
-
-    .pestañaescribinos {
-        height: auto;
-        width: auto;
-        display: flex;
-        flex-direction: column;
-        padding-top: 125px;
-        padding-left: 25px;
-        padding-right: 25px;
-        padding-bottom: 210px; 
     }
 
     .cuadrodeinformacion {
         height: auto;
         width: 80%;
-        font-size: 1rem;
+        font-size: $textoextraChico;
         background-color: white;
         border-style: solid;
         border-width: 5px;    
@@ -424,18 +403,14 @@ html {
 
     .cajacuadro {
         padding-left: 0px;
-        padding-bottom: 0px;
-        padding-top: 25px; 
+        padding-bottom: 75px;
     } 
 
     .cuerpo {
-        height: auto;
+        height: 80vh;
         width: 100%;
         display: flex;
-        padding-top: 125px;
-        padding-bottom: 275px; 
     }
-
    
     .contacto { 
         background-color:$colorNav;
