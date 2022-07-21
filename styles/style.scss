@@ -106,16 +106,28 @@ html {
     height: 50px;
     width: 50px;  
     position:fixed;
-    bottom: 50px;
+    bottom: 200px;
     right: 50px;    
 } 
 
+.text-muted {
+    font-size: $textoChico;
+}
+
+
 .contacto { 
+    position:fixed;
+    bottom:0;
     background-color:$colorNav;
     padding-left: 25px;
     padding-top: 25px;
     padding-bottom: 25px;
     text-align: left;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    
 }
 
 /* PESTAÑA SERVICIOS */
@@ -131,7 +143,7 @@ html {
     padding-top: 150px;
     padding-left: 50px;
     padding-right: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 200px;
 }
 
 .serviciostexto {
@@ -147,7 +159,6 @@ html {
 .pestañaestudio {
     @extend .pestañanosotros;
     padding-right: 50px;
-    padding-bottom: 285px;
 }
 
 .estudiotexto {
@@ -204,7 +215,7 @@ html {
     display: flex;
     flex-direction: column;
     padding-right: 25px;
-    padding-bottom: 25px;
+    padding-bottom: 200px;
     align-content:flex-start; 
 }
 
@@ -234,7 +245,15 @@ html {
     }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 1024px) {
+
+    .botonwapp {
+        height: 50px;
+        width: 50px;  
+        position:fixed;
+        top: 135px;
+        right: 25px;    
+    } 
 
     #navbarSupportedContent {
         background-color:$colorNav;
@@ -266,8 +285,6 @@ html {
         height: 50px;
         width: 50px;  
         position:fixed;
-        bottom: 25px;
-        right: 25px; 
     } 
 
     h2 {
@@ -367,6 +384,7 @@ html {
         padding-top: 10px;
         padding-left: 0px;
         padding-right: 0px;
+        padding-bottom: 200px; 
     }
 
     #grilla{
@@ -382,7 +400,6 @@ html {
         padding-top: 125px;
         padding-left: 25px;
         padding-right: 25px;
-        padding-top: 150px; 
     } 
 
     .serviciostexto {
@@ -411,12 +428,16 @@ html {
         width: 100%;
         display: flex;
     }
+
    
     .contacto { 
+        position:fixed;
+        bottom:0;
         background-color:$colorNav;
         padding-left: 25px;
         padding-top: 25px;
         text-align: left;
+        width: 100%;
     }
 
 }
